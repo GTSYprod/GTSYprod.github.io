@@ -130,9 +130,7 @@ header {
     order: 2;
     position: relative;
     width: 45%;
-    max-width: 600px;
     padding-right: 5%;
-    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -377,7 +375,6 @@ fieldset input, fieldset textarea {
 @media (max-width: 1920px) {
     #graphic img {
         width: 100%;
-        max-width: 100%;
         object-fit: contain;
     }
 }
@@ -402,7 +399,6 @@ fieldset input, fieldset textarea {
     #graphic {
         order: 2;
         width: 100%;
-        max-width: 500px;
         padding-right: 0;
         margin: 0 auto 2rem auto;
     }
@@ -486,7 +482,6 @@ fieldset input, fieldset textarea {
 
     #graphic {
         width: 100%;
-        max-width: 400px;
     }
     
     #landing h1 {
@@ -526,10 +521,6 @@ fieldset input, fieldset textarea {
     
     main {
         padding-top: 25%;
-    }
-
-    #graphic {
-        max-width: 100px;
     }
     
     #landing h1 {
