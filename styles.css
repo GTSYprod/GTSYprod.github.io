@@ -119,6 +119,7 @@ header {
     width: 90%;
     margin: 0 auto;
     margin-bottom: 15%;
+    overflow: hidden;
 }
 
 #graphic {
