@@ -47,6 +47,10 @@ a:hover {
     color:#575757;
 }
 
+.arrow {
+    width: 100%;
+}
+
 .odd {
     padding-right: 20%;
 }
