@@ -238,7 +238,6 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 80%;
     gap: 2rem;
     margin-top: 2rem;
 }
