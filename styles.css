@@ -1,0 +1,575 @@
+:root {
+    /* Palette */
+    --color-white: #FFFFFF;
+    --color-grey-1: #888888;
+    --color-grey-2: #575757;
+    --color-grey-3: #2F2E2E;
+    --color-black: #1C1C1C;
+    --color-red: #6a0000;
+
+    /* Font */
+    --font-family: 'Monda', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 20px;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--color-white);
+    background-color: var(--color-grey-3);
+}
+
+main {
+    padding-top: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease
+}
+
+a:hover {
+    color:#575757;
+}
+
+.odd {
+    padding-right: 10%;
+}
+
+.even {
+    transform: scaleX(-1);
+    padding-right: 10%;
+}
+
+/* Nav Bar */
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#topBar {
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: var(--color-black);
+    box-shadow: 0 2px 2px rgba(0,0,0,0.35);
+}
+
+.gtsyLogo {
+    margin: 0 auto;
+}
+
+.gtsy, .gtsyLogo {
+    cursor: pointer;
+}
+
+#chevron {
+    transition: transform 0.3s ease;
+}
+
+#chevron:hover {
+    transform: rotate(90deg) translateX(5px);
+}
+
+/* Dropdown menu */ 
+
+#dropDown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 1rem 5%;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    max-height: 0;
+    z-index: 100;
+    background-color: var(--color-black);
+    box-shadow: 0 2px 2px rgba(0,0,0,0.35);
+}
+
+#dropDown.show {
+    display: flex;
+    max-height: 300px;
+}
+
+/* Hero content */
+
+#heroContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 15%;
+}
+
+#graphic {
+    order: 2;
+    position: relative;
+    width: 45%;
+    max-width: 600px;
+    padding-right: 5%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#graphic img {
+    width: 150%;
+    height: auto;
+    max-width: 150%;
+    object-fit: contain;
+}
+
+#landing {
+    order: 1;
+    width: 45%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+#landing img {
+    position: relative;
+    left: 5%;
+    max-width: 100%;
+}
+
+#landing h1 {
+    position: relative;
+    left: 5%;
+    font-size: 72px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+#landing p {
+    position: relative;
+    left: 5%;
+    font-size: 36px;
+    max-width: 100%;
+}
+
+/* About page */
+
+#aboutPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+#aboutPage h1 {
+    font-size: 72px;
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+
+#about_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 2rem;
+}
+
+#about_card p{
+    flex: 1;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+#about_card img {
+    border: solid black 4px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.35);
+    max-width: 400px;
+    width: 100%;
+}
+
+.contentCard {
+    background-color: var(--color-grey-2);
+    padding: 2% 2% 2% 2%;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.35);
+}
+
+/* Skills Page */
+
+#skillPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20%;
+}
+
+#skillPage h1 {
+    margin: 0 auto;
+    font-size: 72px;
+    font-weight: normal;
+}
+
+#skillContent {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+#skillContent h2 {
+    width: 100%;
+    font-size: 48px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#language_card, #design_card {
+    flex: 1;
+    width: 500px;
+    min-width: 250px;
+    margin-bottom: 1rem;
+    padding: 4% 2% 4% 10%;
+    text-align: left;
+}
+
+/* Contact Page */
+
+#contactPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+#contactPage h1 {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 72px;
+    font-weight: normal;
+}
+
+#contactForm {
+    width: 90%;
+    padding: 1%;
+}
+
+fieldset {
+    border-style: none;
+}
+
+fieldset ul {
+    list-style: none;
+    width: 100%
+}
+
+fieldset li {
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+fieldset label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+}
+
+fieldset input, fieldset textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 4px;
+    border: 1px solid var(--color-black);
+    background-color: var(--color-grey-3);
+    color: var(--color-white);
+    font-family: var(--font-family);
+    font-size: 0.8rem;
+} 
+
+#clear {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#submit, #reset{
+    padding: 0.3rem 1.5rem;
+    border-radius: 4px;
+    font-family: var(--font-family);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reset {
+    background-color: var(--color-grey-1);
+    border: solid 2px var(--color-white);
+}
+
+#submit {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border-style: none;
+}
+
+#submit:hover {
+    background-color: var(--color-grey-3);
+    color: var(--color-white);
+    border: solid 2px var(--color-grey-1);
+    margin-right: -0.18%;
+}
+
+#reset:hover {
+    background-color: var(--color-grey-3);
+    color: var(--color-white);
+}
+
+.contactError {
+    color: var(--color-red);
+}
+
+/* Footer */
+
+#bottomBar {
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-black);
+    font-size: 16px;
+}
+
+#bottomNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (max-width: 1920px) {
+    #graphic img {
+        width: 100%;
+        max-width: 100%;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 1440px) {
+    html {
+        font-size: 18px;
+    }
+
+    main {
+        padding-top: 15%;
+    }
+
+    #heroContent {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    #graphic {
+        order: 2;
+        width: 80%;
+        max-width: 500px;
+        padding-right: 0;
+        margin: 0 auto 2rem auto;
+    }
+
+    #landing {
+        order: 1;
+        width: 80%;
+        align-items: center;
+        margin: 0 auto;
+    }
+    
+    #landing h1 {
+        left: 0;
+        font-size: 58px;
+    }
+    
+    #landing p {
+        left: 0;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #landing img {
+        left: 0;
+    }
+    
+    #aboutPage h1, #skillPage h1, #contactPage h1 {
+        font-size: 58px;
+    }
+    
+    #skillContent h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 16px;
+    }
+    
+    main {
+        padding-top: 15%;
+    }
+    
+    #aboutPage h1, #skillPage h1, #contactPage h1 {
+        font-size: 54px;
+    }
+    
+    #skillContent h2 {
+        font-size: 36px;
+    }
+    
+    #aboutPage, #skillPage, #contactPage {
+        padding-top: 25%;
+    }
+    
+    #about_card {
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    #about_card img {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    
+    main {
+        padding-top: 20%;
+    }
+
+    #dropDown {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #graphic {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    #landing h1 {
+        font-size: 42px;
+    }
+    
+    #landing p {
+        font-size: 24px;
+    }
+    
+    #aboutPage h1, #skillPage h1, #contactPage h1 {
+        font-size: 42px;
+    }
+    
+    #skillContent h2 {
+        font-size: 32px;
+    }
+    
+    #aboutPage, #skillPage, #contactPage {
+        padding-top: 30%;
+    }
+    
+    #bottomBar {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    #contactForm {
+        width: 95%;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 12px;
+    }
+    
+    main {
+        padding-top: 25%;
+    }
+
+    #graphic {
+        max-width: 100px;
+    }
+    
+    #landing h1 {
+        font-size: 36px;
+    }
+    
+    #landing p {
+        font-size: 20px;
+    }
+    
+    #aboutPage h1, #skillPage h1, #contactPage h1 {
+        font-size: 36px;
+    }
+    
+    #skillContent h2 {
+        font-size: 28px;
+    }
+    
+    #aboutPage, #skillPage, #contactPage {
+        padding-top: 35%;
+    }
+    
+    .gtsyLogo {
+        width: 120px;
+    }
+    
+    #chevron svg {
+        height: 40px;
+    }
+    
+    #about_card img {
+        max-width: 280px;
+    }
+    
+    #clear {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #submit, #reset {
+        width: 100%;
+    }
+    
+    #bottomNav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTSY Productions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monda:wght@400..700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="topBar">
+            <img src="assets/gtsyLogo.svg" class="gtsyLogo" width="150" alt="Logo">
+            <a id="chevron">
+                <svg xmlns="http://www.w3.org/2000/svg" height="50" fill="currentColor" class="chevron" viewBox="0 -1 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                </svg>
+            </a>
+        </div>
+        <nav id="dropDown">
+            <a href="home" class="navLink">Home</a>
+            <a href="about" class="navLink">About</a>
+            <a href="skills" class="navLink">Skills</a>
+            <a href="contact" class="navLink">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="heroContent">
+            <div id="graphic">
+                <img src="assets/graphic.svg" alt="Graphic Art">
+            </div>
+            <div id="landing">
+                <img src="assets/gtsyLogo.svg" alt="Logo">
+                <h1>Creative:</h1>
+                <p>Where creativity, practicality and visions meet.</p>
+            </div>
+        </section>
+        <section id="aboutPage">
+            <img src="assets/arrow.svg" width="100%" class="arrow" alt="arrow">
+            <h1>About</h1>
+            <div id="about_card" class="contentCard">
+                <p>
+                    Hello, my name is Mason Rhodes. I am a full stack web developer and designer based out of Winnipeg, Manitoba.
+                    I strive to use my skills to create functional user-experiences without compromising artistic freedom and vision.
+                    <br>
+                    I have over 4 years of experience in design software and have been creating for as long as I can remember. 
+                    I wish to take this experience and combine it with a career in software development to create lasting and memorable projects.
+                </p>
+                <img src="assets/me.jpg" width="400" alt="A picture of me">
+            </div>
+        </section>
+        <section id="skillPage">
+            <img src="assets/arrow.svg" width="100%" class="arrow" alt="arrow">
+            <h1>Skills</h1>
+            <div id="skillContent">
+                <div id="language_section">
+                    <h2>Languages</h2>
+                    <div id="language_card" class="contentCard">
+                        <ul>
+                            <li>HTML/CSS/JS</li>
+                            <li>Java</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="design_section">
+                    <h2>Design</h2>
+                    <div id="design_card" class="contentCard">
+                        <ul>
+                            <li>Photoshop/Lighroom</li>
+                            <li>Illustrator</li>
+                            <li>After Effects</li>
+                            <li>Premiere</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contactPage">
+            <img src="assets/arrow.svg" width="100%" class="arrow" alt="arrow">
+            <h1>Contact</h1>
+            <form id="contactForm" class="contentCard" action="index.html">
+                <fieldset>
+                    <ul>
+                        <li>
+                            <label for="fullname">Name</label>
+                            <input id="fullname" name="fullname" type="text" placeholder="Enter your name">
+                            <p class="contactError error" id="fullname_error">* Required field</p>
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="text" placeholder="Enter your email">
+                            <p class="contactError error" id="email_error">* Required Field</p>
+                            <p class="contactError error" id="emailformat_error">* Invalid email</p>
+                        </li>
+                        <li>
+                            <label for="phonenumber">Phone Number</label>
+                            <input id="phonenumber" name="phonenumber" type="text" placeholder="Phone number">
+                            <p class="contactError error" id="phonenumber_error">* Required Field</p>
+                            <p class="contactError error" id="phoneformat_error">* Invalid Phone Number</p>
+                        </li>
+                        <li>
+                            <label for="subject">Subject</label>
+                            <input id="subject" name="subject" type="text" placeholder="Subject Line">
+                            <p class="contactError error" id="subject_error">* Required Field</p>
+                        </li>
+                        <li>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Enter your message here"></textarea>
+                            <p class="contactError error" id="message_error">* Required Field</p>
+                        </li>
+                    </ul>
+                    <div id="clear">
+                        <button type="submit" id="submit">Submit</button>
+                        <button type="reset" id="reset">Reset</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div id="bottomBar">
+            <img src="assets/gtsyLogo.svg" class="gtsy" width="150" alt="Logo">
+            <p>© 2025 GTSY Productions</p>
+            <div id="bottomNav">
+                <a href="home" class="navLink">Home</a>
+                <a href="about" class="navLink">About</a>
+                <a href="skills" class="navLink">Skills</a>
+                <a href="contact" class="navLink">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
