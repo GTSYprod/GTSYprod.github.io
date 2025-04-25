@@ -27,6 +27,10 @@ body {
     background-color: var(--color-grey-3);
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 main {
     padding-top: 10%;
 }
