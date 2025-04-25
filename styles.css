@@ -401,7 +401,7 @@ fieldset input, fieldset textarea {
 
     #graphic {
         order: 2;
-        width: 80%;
+        width: 100%;
         max-width: 500px;
         padding-right: 0;
         margin: 0 auto 2rem auto;
