@@ -531,11 +531,27 @@ fieldset input, fieldset textarea {
 
 @media (max-width: 576px) {
     html {
-        font-size: 12px;
+        font-size: 16px;
     }
     
     main {
         padding-top: 25%;
+    }
+
+    #dropDown {
+        font-size: 28px;
+    }
+
+    #heroContent, #aboutPage, #skillPage {
+        margin-bottom: -25%;
+    }
+
+    #contactPage {
+        margin-bottom: 8%;
+    }
+
+    #graphic {
+        padding-top: 15%;
     }
     
     #landing h1 {
@@ -549,9 +565,14 @@ fieldset input, fieldset textarea {
     #aboutPage h1, #skillPage h1, #contactPage h1 {
         font-size: 36px;
     }
+
+    #skillContent li{
+        font-size: 20px; 
+    }
     
     #skillContent h2 {
-        font-size: 28px;
+        font-size: 32px;
+        width: 450px;
     }
     
     #aboutPage, #skillPage, #contactPage {
@@ -565,9 +586,17 @@ fieldset input, fieldset textarea {
     #chevron svg {
         height: 40px;
     }
+
+    #about_card {
+        padding: 5%;
+    }
     
     #about_card img {
-        max-width: 280px;
+        max-width: 450px;
+    }
+
+    #contactForm {
+        padding: 3%;
     }
     
     #clear {
@@ -580,7 +609,6 @@ fieldset input, fieldset textarea {
     }
     
     #bottomNav {
-        flex-direction: column;
-        gap: 0.5rem;
+        gap: 2rem;
     }
 }
